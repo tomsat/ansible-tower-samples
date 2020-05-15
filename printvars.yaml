@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+    - name: Debugging
+      debug:
+        msg: "{{name}}"
+    - name: Datacenter
+      debug:
+        msg: "{{vmware_vm_datacenter}}"
+    - name: Cluster
+      debug:
+        msg: "{{vmware_vm_cluster}}"
+    - name: Datastore
+      debug:
+        msg: "{{vmware_vm_datastore}}"
+    - name: Cpu
+      debug:
+        msg: "{{vmware_vm_cpu}}"
+    - name: Memorry
+      debug:
+        msg: "{{vmware_vm_mem}}"
